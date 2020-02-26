@@ -63,40 +63,13 @@ function hasValueDeep(json, findValue) {
 
 
 //--------function returnTimeStamp() returns timestamp------------------
-var hourInSeconds = {
-    "1":3600,"2":7200,"3":10800,"4":14400,"5":18000,"6":21600,"7":25200,"8":28800,"9":32400,"10":36000,"11":39600,"12":43200
-}
-
 function returnTimeStamp() {
-    if(qArray[6] == "1") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[1];
-    } else if (qArray[6] == "2") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[2];
-    } else if (qArray[6] == "3") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[3];
-    } else if (qArray[6] == "4") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[4];
-    } else if (qArray[6] == "5") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[5];
-    } else if (qArray[6] == "6") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[6];
-    } else if (qArray[6] == "7") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[7];
-    } else if (qArray[6] == "8") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[8];
-    } else if (qArray[6] == "9") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[9];
-    } else if (qArray[6] == "10") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[10];
-    } else if (qArray[6] == "11") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[11];
-    } else if (qArray[6] == "12") {
-        return (Date.now() / 1000 | 0) + hourInSeconds[12];
+    if (parseInt(qArray[6]) < 13 && parseInt(qArray[6]) != NaN) {
+        return parseInt(qArray[6]) * 3600;
     } else if (parseInt(qArray[6]) > 12 && parseInt(qArray[6]) != NaN) {
         return undefined;
     } else return false;
 }
-
 
 //---------function childProcess() to get the predicted value------------
 var result = undefined;
