@@ -1,0 +1,23 @@
+{
+  "name": "pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-route": "^1.7.5",
+    "body-parser": "^1.19.0",
+    "country-state-city": "^0.1.0",
+    "express": "^4.17.1",
+    "full-countries-cities": "0.0.9",
+    "geonames-postal-codes-import-nodejs": "^1.0.0",
+    "http": "0.0.0",
+    "mongoose": "^5.7.11",
+    "path": "^0.12.7",
+    "uniqid": "^5.0.3"
+  }
+}

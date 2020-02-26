@@ -1,0 +1,1 @@
+mongorestore --db dheeraj C:\Users\dheer\Desktop\Backup\dheeraj\
